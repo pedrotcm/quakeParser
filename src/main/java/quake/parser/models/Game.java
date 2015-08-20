@@ -7,6 +7,7 @@ public class Game {
 	private String name;
 	private Integer totalKills;
 	private Map<String, Integer> killsForPlayers;
+	private Map<String, Integer> meansOfDeath;
 
 	public String getName() {
 		return name;
@@ -30,6 +31,14 @@ public class Game {
 
 	public void setKillsForPlayers( Map<String, Integer> killsForPlayers ) {
 		this.killsForPlayers = killsForPlayers;
+	}
+
+	public Map<String, Integer> getMeansOfDeath() {
+		return meansOfDeath;
+	}
+
+	public void setMeansOfDeath( Map<String, Integer> meansOfDeath ) {
+		this.meansOfDeath = meansOfDeath;
 	}
 
 	@Override
