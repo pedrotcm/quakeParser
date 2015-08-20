@@ -1,13 +1,11 @@
 package quake.parser.models;
 
-import java.util.List;
 import java.util.Map;
 
 public class Game {
 
 	private String name;
 	private Integer totalKills;
-	private List<Player> players;
 	private Map<String, Integer> killsForPlayers;
 
 	public String getName() {
@@ -26,20 +24,17 @@ public class Game {
 		this.totalKills = totalKills;
 	}
 
-	public List<Player> getPlayers() {
-		return players;
-	}
-
-	public void setPlayers( List<Player> players ) {
-		this.players = players;
-	}
-
 	public Map<String, Integer> getKillsForPlayers() {
 		return killsForPlayers;
 	}
 
 	public void setKillsForPlayers( Map<String, Integer> killsForPlayers ) {
 		this.killsForPlayers = killsForPlayers;
+	}
+
+	@Override
+	public String toString() {
+		return "Game [name=" + name + ", totalKills=" + totalKills + ", killsForPlayers=" + killsForPlayers + "]";
 	}
 
 }
