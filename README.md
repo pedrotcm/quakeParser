@@ -13,5 +13,5 @@ report_.txt (Task 2)</br>
 meansDeath_.txt (Plus)</br>
 
 <h3>SOBRE</h3>
-  A classe App possui o método "parse" que ler o arquivo de log "games.log" e coleta as informações de cada jogo retornando uma lista de Games.</br>
+  A classe App possui o método "parse" que lê o arquivo de log "games.log" e coleta as informações de cada jogo retornando uma lista de Games.</br>
   Os métodos createLogParser, report e meansOfDeath recebem a lista de games e são responsavéis por criarem os arquivos correspondentes aos resultados.
